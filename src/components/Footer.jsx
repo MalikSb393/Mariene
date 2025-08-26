@@ -3,22 +3,22 @@ import logo from '../assets/LOGO.webp'
 const Footer = () => {
     return (
         <div>
-            <div className='bg-[#0f0f35] py-5 px-20 flex items-center justify-between'>
+            <div className='bg-[#0f0f35] py-2 px-5 lg:px-20 flex items-center justify-between'>
                 <div className=''>
-                    <p className='text-white font-bold py-2 text-3xl'>Looking for the Best Transport Services?</p>
-                    <p className='text-white font-medium text-lg'> As a app web crawler expert, We will help to organize.</p>
+                    <p className='text-white font-bold py-2 text-xl lg:text-3xl'>Looking for the Best Transport Services?</p>
+                    <p className='text-white font-medium text-sm lg:text-lg'> As a app web crawler expert, We will help to organize.</p>
                 </div>
                 <div>
-                    <button className='py-2 px-6 rounded-sm bg-primary cursor-pointer'>Get A Quote</button>
+                    <button className='py-2 px-2 text-white lg:px-6 rounded-sm bg-primary text-xs lg:text-base cursor-pointer'>Quote?</button>
                 </div>
             </div>
-            <div className='bg-[#06071d] flex gap-10 py-6 px-20'>
-                <div className='h-[70dvh] w-[290px] '>
+            <div className='bg-[#06071d] flex flex-col items-center lg:flex-row gap-10 py-6 px-5 lg:px-20'>
+                <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='px-3  w-[80%]'><img src={logo} alt="logo" /></div>
                     <p className='font-medium text-white'>Our Team is made of a group of highly trained, experienced certified divers and are all WCB/CSA certified. We are experienced in the many challenges involved with inspection and maintenance diving.</p>
                     <button className='py-1 px-3 bg-primary font-semibold rounded-sm cursor-pointer text-white my-5'>About us</button>
                 </div>
-                <div className='h-[70dvh] w-[290px] '>
+                <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='font-bold text-white text-3xl '>Quick Links <div className='w-[12%] mt-1 h-1 bg-primary'></div></div>
                     <ul className='text-white font-medium  mt-5 flex flex-col gap-3'>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Home</li>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact us</li>
                     </ul>
                 </div>
-                <div className='h-[70dvh] w-[290px] '>
+                <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='font-bold text-white text-3xl '>Our Services <div className='w-[12%] mt-1 h-1 bg-primary'></div></div>
                     <ul className='text-white font-medium  mt-5 flex flex-col gap-3'>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Conventional & Advanced NDT Services</li>
@@ -42,7 +42,7 @@ const Footer = () => {
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Survey Services</li>
                     </ul>
                 </div>
-                <div className='h-[70dvh] w-[290px] '>
+                <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='font-bold text-white text-3xl '>Our Services <div className='w-[12%] mt-1 h-1 bg-primary'></div></div>
                     <ul className='text-white font-medium  mt-5 flex flex-col gap-3'>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Head Office: <div>Manama, Bahrain</div></li>

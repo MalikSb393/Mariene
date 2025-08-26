@@ -12,10 +12,10 @@ import img9 from '../assets/service_Img/ser9.webp'
 
 const ServiceSection = ({heading}) => {
   return (
-    <div className='bg-[#000684] p-10'>
-        <div className='secondary font-medium text-2xl text-center'>We specialise in the transportation</div>
-        <div className='text-center font-bold text-white py-2 text-5xl'>{heading}</div>
-        <div className='p-10 grid grid-cols-3 gap-7'>
+    <div className='bg-[#000684] lg:p-10'>
+        <div className='secondary font-medium text-xl lg:text-2xl text-center'>We specialise in the transportation</div>
+        <div className='text-center font-bold text-white py-2 text-3xl lg:text-5xl'>{heading}</div>
+        <div className='lg:p-10 p-4 flex flex-col items-center lg:grid lg:grid-cols-3 gap-7'>
             <div className=' h-[300px] rounded-t-md w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img1} alt="service  image" />
