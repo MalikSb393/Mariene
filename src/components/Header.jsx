@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             <nav className='bg-black flex items-center justify-between px-2 lg:px-20 h-20'>
                 <div className=''>
-                    <img className='h-18' src='/LOGO.webp' alt="Logo" />
+                    <img className='h-18' src={logo} alt="Logo" />
                 </div>
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white flex font-medium text-md items-center gap-5'>
