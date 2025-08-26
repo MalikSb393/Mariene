@@ -3,6 +3,7 @@ import { IoIosMailUnread } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from '../assets/LOGO.webp'
 const Header = () => {
     return (
         <header>
@@ -25,7 +26,7 @@ const Header = () => {
             </div>
             <nav className='bg-black flex items-center justify-between px-2 lg:px-20 h-20'>
                 <div className=''>
-                    <img className='h-18' src="../src/assets/LOGO.webp " alt="Logo" />
+                    <img className='h-18' src={logo} alt="Logo" />
                 </div>
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white flex font-medium text-md items-center gap-5'>
