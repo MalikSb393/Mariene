@@ -13,10 +13,10 @@ import img9 from '../assets/service_Img/ser9.webp'
 const ServiceSection = ({heading}) => {
   return (
     <div className='bg-[#000684] lg:p-10'>
-        <div className='secondary font-medium text-xl lg:text-2xl text-center'>We specialise in the transportation</div>
+        <div className='secondary font-medium pt-3 lg:pt-0 text-xl lg:text-2xl text-center'>We specialise in the transportation</div>
         <div className='text-center font-bold text-white py-2 text-3xl lg:text-5xl'>{heading}</div>
         <div className='lg:p-10 p-4 flex flex-col items-center lg:grid lg:grid-cols-3 gap-7'>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img1} alt="service  image" />
                 </div>
@@ -26,7 +26,7 @@ const ServiceSection = ({heading}) => {
                 </div>
             </div>
             
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img2} alt="service  image" />
                 </div>
@@ -35,7 +35,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600  transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img3} alt="service  image" />
                 </div>
@@ -44,7 +44,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img4} alt="service  image" />
                 </div>
@@ -53,7 +53,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img5} alt="service  image" />
                 </div>
@@ -62,7 +62,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img6} alt="service  image" />
                 </div>
@@ -71,7 +71,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img7} alt="service  image" />
                 </div>
@@ -80,7 +80,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img8} alt="service  image" />
                 </div>
@@ -89,7 +89,7 @@ const ServiceSection = ({heading}) => {
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>
                 </div>
             </div>
-            <div className=' h-[300px] rounded-t-md w-[370px]'>
+            <div className=' h-[300px] rounded-t-md w-[330px] lg:w-[370px]'>
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img9} alt="service  image" />
                 </div>
