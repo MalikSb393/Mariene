@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/LOGO.webp'
+import logo from '../assets/logo.jpeg'
 const Footer = () => {
     return (
         <div>
@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <div className='bg-[#06071d] flex flex-col items-center lg:flex-row gap-10 py-6 px-5 lg:px-20'>
                 <div className='lg:h-[70dvh] w-[290px] '>
-                    <div className='px-3  w-[80%]'><img src={logo} alt="logo" /></div>
+                    <div className='px-3  w-[50%] lg:w-[80%]'><img className='rounded-full' src={logo} alt="logo" /></div>
                     <p className='font-medium text-white'>Our Team is made of a group of highly trained, experienced certified divers and are all WCB/CSA certified. We are experienced in the many challenges involved with inspection and maintenance diving.</p>
                     <button className='py-1 px-3 bg-primary font-semibold rounded-sm cursor-pointer text-white my-5'>About us</button>
                 </div>

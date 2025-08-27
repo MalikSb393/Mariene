@@ -3,7 +3,7 @@ import { IoIosMailUnread } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from '../assets/LOGO.webp'
+import logo from '../assets/logo.jpeg'
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 const Header = () => {
@@ -30,11 +30,11 @@ const Header = () => {
             </div>
             <nav className='bg-black flex items-center justify-between px-2 lg:px-20 h-20'>
                 <div className=''>
-                    <img className='h-18' src={logo} alt="Logo" />
+                    <img className='h-18 rounded-full ' src={logo} alt="Logo" />
                 </div>
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white  flex font-medium text-md items-center gap-5'>
-                        <li className='hover:text-amber-500 transition-all cursor-pointer'>Home</li>
+                        <Link to={'/'} className='hover:text-amber-500 transition-all cursor-pointer'>Home</Link>
                         <Link to='/about' className='hover:text-amber-500 transition-all cursor-pointer'>About us</Link>
                         <li className="relative hover:text-amber-500 transition-all group cursor-pointer">
                             <span className="">

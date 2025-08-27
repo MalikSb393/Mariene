@@ -1,41 +1,31 @@
 import React from 'react'
 import { useState } from "react";
 import { FiX, FiChevronDown } from "react-icons/fi";
-
+import logo from '../assets/logo.jpeg'
+import { Link } from 'react-router-dom';
 const Sidebar = ({ open, onClose }) => {
     const [servicesOpen, setServicesOpen] = useState(false);
     
-    const menuItems = [
-      "Conventional & Advanced NDT Services",
-      "Industrial Services",
-      "Marine Fenders",
-      "Diving Services",
-      "ROV Inspections",
-      "Marine Craft",
-      "Marine Salvage Services",
-      "Rope Access & Drone Services",
-      "Survey Services",
-    ];
   return (
      <>
       {/* Sidebar Panel */}
       <div
-        className={`fixed top-0 left-0 w-fit h-full bg-black  text-white z-50 transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-fit h-full bg-black overflow-y-scroll pb-5  text-white z-50 transform transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {/* Header */}
-        <div className="flex justify-between items-center px-4 py-4 border-b border-gray-700">
-          <span className="text-xl font-bold">TAA</span>
-          <button className="text-2xl" onClick={onClose}>
+        <div className="flex justify-between items-center px-4 py-1 border-b border-gray-700">
+          <img className='rounded-full h-10' src={logo} alt="logo" />
+          <button className="text-3xl" onClick={onClose}>
             <FiX />
           </button>
         </div>
 
         {/* Menu Links */}
         <ul className="flex flex-col p-4 space-y-4">
-          <li className="hover:text-blue-400 cursor-pointer">Home</li>
-          <li className="hover:text-blue-400 cursor-pointer">About us</li>
+          <Link   onClick={onClose}  to={'/'} className="hover:text-blue-400 cursor-pointer">Home</Link>
+          <Link  onClick={onClose} to={'/about'} className="hover:text-blue-400 cursor-pointer">About us</Link>
 
           {/* Dropdown inside Sidebar */}
           <li>
@@ -44,29 +34,32 @@ const Sidebar = ({ open, onClose }) => {
               onClick={() => setServicesOpen(!servicesOpen)}
             >
               Our Services+Our Expertise
+              <div>
               <FiChevronDown
                 className={`transform transition-transform ${
                   servicesOpen ? "rotate-180" : ""
                 }`}
               />
+              </div>
             </button>
             {servicesOpen && (
               <ul className="mt-2 ml-2 bg-gray-800 rounded">
-                {menuItems.map((item) => (
-                  <li
-                    key={item}
-                    className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"
-                  >
-                    {item}
-                  </li>
-                ))}
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/conventional_Services'}>Conventional & Advanced NDT Services</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/industrial_Services'}>Industrial Services</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/marine_Fenders'}>Marine Fenders</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/diving_Services'}>Diving Services</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/rov_Inspections'}>ROV Inspections</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/marine_Craft'} >Marine Craft</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/marine_Salvage'}>Marine Salvage Services</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/rope_Access'}>Rope Access & Drone Services</Link></li>
+               <li onClick={onClose} className="px-4 py-2 hover:bg-gray-700 border-b border-gray-600 last:border-none"><Link to={'/survey_Services'}>Survey Services</Link></li>
               </ul>
             )}
           </li>
 
-          <li className="hover:text-blue-400 cursor-pointer">Our Clients</li>
-          <li className="hover:text-blue-400 cursor-pointer">HSE</li>
-          <li className="hover:text-blue-400 cursor-pointer">Contact</li>
+          <Link onClick={onClose} to={'/clients'} className="hover:text-blue-400 cursor-pointer">Our Clients</Link>
+          <Link onClick={onClose} to={'/hse'} className="hover:text-blue-400 cursor-pointer">HSE</Link>
+          <Link onClick={onClose} to={'/contact'} className="hover:text-blue-400 cursor-pointer">Contact</Link>
         </ul>
 
         {/* Quote Button */}
