@@ -188,7 +188,7 @@ const Home = () => {
 
       </section>
       {/* contact section */}
-      <section className='flex flex-col lg:flex-row px-5 lg:px-10 my-5 lg:h-[80vh] items-center gap-5'>
+      <section id='CU' className='flex flex-col lg:flex-row px-5 lg:px-10 my-5 lg:h-[80vh] items-center gap-5'>
         <div className='lg:w-1/2 '>
           <img className='lg:h-[80vh] rounded-md' src={cntc} alt="image" />
         </div>

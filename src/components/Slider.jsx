@@ -19,9 +19,9 @@ const Slider = () => {
     ]
 
     const MobileSlider = [
-         pic1,
-        pic2,
-        pic3
+        mob1,
+        mob2,
+        mob3
     ]
     const handleNext = () => {
         if (DesktopSlider.length - 1 > countslide) {

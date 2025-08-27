@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '../assets/LOGO.webp'
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
@@ -31,7 +32,7 @@ const Header = () => {
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white  flex font-medium text-md items-center gap-5'>
                         <li className='hover:text-amber-500 transition-all cursor-pointer'>Home</li>
-                        <li className='hover:text-amber-500 transition-all cursor-pointer'>About us</li>
+                        <Link to='/about' className='hover:text-amber-500 transition-all cursor-pointer'>About us</Link>
                         <li className="relative hover:text-amber-500 transition-all group cursor-pointer">
                             <span className="">
                                 Our Services<span className='text-amber-500'>+</span>Our Expertise
@@ -39,24 +40,49 @@ const Header = () => {
 
                             {/* Dropdown */}
                             <ul className="absolute top-[52px] left-0 w-52 bg-white text-black shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform -translate-y-3 group-hover:translate-y-0 z-50">
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Conventional & Advanced NDT Services</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Industrial Services</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Marine Fenders</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Diving Services</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >ROV Inspections</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Marine Craft</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Marine Salvage Services</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Rope Access & Drone Services</li>
-                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Survey Services</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/conventional_Services'} >Conventional & Advanced NDT Services</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/industrial_Services'}  >Industrial Services</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/marine_Fenders'}  >Marine Fenders</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm"  >
+                                <Link to={'/diving_Services'}  >Diving Services</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/rov_Inspections'}  >ROV Inspections</Link >
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/marine_Craft'}  >Marine Craft</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/marine_Salvage'}  >Marine Salvage Services</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >                        
+                                <Link to={'/rope_Access'}  >Rope Access & Drone Services</Link>
+                                </li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >
+                                <Link to={'/survey_Services'}  >Survey Services</Link>
+                                </li>
                                
                             </ul>
                         </li>
-                        <li className='hover:text-amber-500 transition-all cursor-pointer'>Our Clients</li>
-                        <li className='hover:text-amber-500 transition-all cursor-pointer'>HSE</li>
-                        <li className='hover:text-amber-500 transition-all cursor-pointer'>Contact</li>
+                        <li>
+                        <Link to={'/clients'} className='hover:text-amber-500 transition-all cursor-pointer'>Our Clients</Link>
+                        </li>
+                        <li>
+                        <Link to={'/hse'} className='hover:text-amber-500 transition-all cursor-pointer'>HSE</Link>
+                        </li>
+                        <li>
+
+                        <Link to={'/contact'} className='hover:text-amber-500 transition-all cursor-pointer'>Contact</Link>
+                        </li>
                     </ul>
                     <div className='text-white'>
-                        <button className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</button>
+                        <a href='#CU' className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</a>
                     </div>
                 </div>
                 <div className='text-4xl lg:hidden text-white'><GiHamburgerMenu /></div>

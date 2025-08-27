@@ -8,3 +8,6 @@
 .secondary{
     color:#f98d06 ;
 }
+html {
+    scroll-behavior: smooth;
+}
