@@ -29,19 +29,37 @@ const Header = () => {
                     <img className='h-18' src={logo} alt="Logo" />
                 </div>
                 <div className='lg:flex hidden items-center gap-20'>
-                    <ul className='text-white flex font-medium text-md items-center gap-5'>
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Our Services <span className='text-[#f98d06] text-xl'>+</span> Our Expertise</li>
-                        <li>Our Clients</li>
-                        <li>HSE</li>
-                        <li>Contact</li>
+                    <ul className='text-white  flex font-medium text-md items-center gap-5'>
+                        <li className='hover:text-amber-500 transition-all cursor-pointer'>Home</li>
+                        <li className='hover:text-amber-500 transition-all cursor-pointer'>About us</li>
+                        <li className="relative hover:text-amber-500 transition-all group cursor-pointer">
+                            <span className="">
+                                Our Services<span className='text-amber-500'>+</span>Our Expertise
+                            </span>
+
+                            {/* Dropdown */}
+                            <ul className="absolute top-[52px] left-0 w-52 bg-white text-black shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform -translate-y-3 group-hover:translate-y-0 z-50">
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Conventional & Advanced NDT Services</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Industrial Services</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Marine Fenders</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Diving Services</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >ROV Inspections</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Marine Craft</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Marine Salvage Services</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Rope Access & Drone Services</li>
+                                <li className="px-2 py-2 hover:text-blue-400 mx-2 border-b last:border-none text-sm" >Survey Services</li>
+                               
+                            </ul>
+                        </li>
+                        <li className='hover:text-amber-500 transition-all cursor-pointer'>Our Clients</li>
+                        <li className='hover:text-amber-500 transition-all cursor-pointer'>HSE</li>
+                        <li className='hover:text-amber-500 transition-all cursor-pointer'>Contact</li>
                     </ul>
                     <div className='text-white'>
                         <button className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</button>
                     </div>
                 </div>
-                <div className='text-4xl lg:hidden text-white'><GiHamburgerMenu/></div>
+                <div className='text-4xl lg:hidden text-white'><GiHamburgerMenu /></div>
             </nav>
         </header>
     )
