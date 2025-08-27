@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoIosMailUnread } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '../assets/LOGO.webp'
 import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 const Header = () => {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
     return (
         <header>
             <div className='bg-[#00c2ff] hidden lg:flex justify-between items-center px-20 h-12'>
@@ -85,7 +88,8 @@ const Header = () => {
                         <a href='#CU' className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</a>
                     </div>
                 </div>
-                <div className='text-4xl lg:hidden text-white'><GiHamburgerMenu /></div>
+                <button className='lg:hidden text-4xl text-white' onClick={() => setSidebarOpen(true)}> <GiHamburgerMenu className='text-4xl lg:hidden text-white'/> </button>
+                <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
             </nav>
         </header>
     )
