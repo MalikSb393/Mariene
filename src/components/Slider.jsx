@@ -1,30 +1,27 @@
 
 import React, { useEffect, useState } from 'react'
-import image1 from '../assets/slid.avif'
-import image2 from '../assets/slid2.avif'
-import image3 from '../assets/slid3.avif'
-// import image4 from '../assets/banner/IMG4.jpg'
-// import image5 from '../assets/banner/IMG5.jpg'
 
-// import imgMB1 from '../assets/banner/IMG1m.jpg'
-// import imgMB2 from '../assets/banner/IMG2m.jpg'
-// import imgMB3 from '../assets/banner/IMG4m.jpg'
-// import imgMB4 from '../assets/banner/IMG4m.webp'
-// import imgMB5 from '../assets/banner/IMG5m.jpg'
+import pic1  from '../assets/pic1.jpg'
+import pic2  from '../assets/pic2.jpg'
+import pic3  from '../assets/pic3.jpg'
+import mob1 from '../assets/mob1.jpg'
+import mob2 from '../assets/mob2.jpg'
+import mob3 from '../assets/mob3.jpg'
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 const Slider = () => {
      const [countslide, setcountslide] = useState(0)
     const DesktopSlider = [
-        image1,
-        image2,
-        image3,
+        pic1,
+        pic2,
+        pic3
+       
     ]
 
     const MobileSlider = [
-       image1,
-        image2,
-        image3,
+         pic1,
+        pic2,
+        pic3
     ]
     const handleNext = () => {
         if (DesktopSlider.length - 1 > countslide) {
