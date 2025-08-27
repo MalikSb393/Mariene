@@ -6,6 +6,7 @@ import lowerimg from '../assets/lowerimg.webp'
 import lowertop from '../assets/lowertop.webp'
 import { FaArrowRight } from "react-icons/fa";
 import ServiceSection from '../components/ServiceSection'
+import cntc from '../assets/contact.jpg'
 {/*expertise images*/ }
 import exp1 from '../assets/Expertise_img/exp1.webp'
 import exp2 from '../assets/Expertise_img/exp2.webp'
@@ -31,12 +32,12 @@ const Home = () => {
     <div>
       <Slider />
       {/** uper slider */}
-      <section className='relative z-10 flex justify-center -top-[500px] lg:-top-[400px]'>
-        <div className=' flex flex-col items-center w-[700px] '>
-          <h1 className='secondary text-3xl lg:text-5xl mb-5 font-bold'>Welcome to Alphamgcc</h1>
-          <div className='font-bold text-white text-xl text-center lg:text-3xl'>Exploring the Depths,Building the Future</div>
-          <span className='text-white text-lg text-center font-medium'>At Alphamgcc, we are a trusted name in diving and marine construction,delivering excellence with safety and precision</span>
-          <div className='flex gap-5 mt-5'>
+      <section className='absolute h-fit z-10 flex justify-center  lg:right-[300px] top-[280px] '>
+        <div className=' flex flex-col items-center lg:w-[700px] '>
+          <h1 className='secondary text-3xl lg:text-5xl lg:w-fit  mb-5 font-bold'>Welcome to Alphamgcc</h1>
+          <div className='font-bold text-white text-xl  text-center lg:text-3xl'>Exploring the Depths,Building the Future</div>
+          <span className='text-white text-lg w-[100vw] lg:w-[700px] text-center font-medium'>At Alphamgcc, we are a trusted name in diving and marine construction,delivering excellence with safety and precision</span>
+          <div className='flex gap-5 mt-10 lg:mt-5'>
             <button className='bg-red-600 px-3 py-2 cursor-pointer rounded-md text-white font-semibold'>Service</button>
             <button className='bg-red-600 px-3 py-2 cursor-pointer rounded-md text-white font-semibold'>About us</button>
           </div>
@@ -161,7 +162,7 @@ const Home = () => {
       {/* why us section */}
       <section className=' lg:px-10'>
         <h3 className='font-bold lg:text-4xl text-3xl text-center secondary'>Why Choose Alphamgcc</h3>
-        <div className='p-15 lg:grid flex flex-col gap-5 lg:gap-0 lg:grid-cols-4'>
+        <div className='p-15 lg:grid flex flex-col items-center gap-5 lg:gap-0 lg:grid-cols-4'>
           <div className='shadow-lg hover:bg-[#00c2ff] transition-all cursor-pointer shadow-gray-300 h-[280px] w-[270px] rounded-md border-t-2 border-t-[#00c2ff]'>
             <img className='w-15 mx-auto py-4' src={star} alt="icon" />
             <h4 className='font-bold text-xl text-center'>Professionalism</h4>
@@ -183,6 +184,78 @@ const Home = () => {
             <h4 className='font-bold text-xl text-center'>Environment</h4>
             <p className='p-6 text-slate-600 text-md'>We tailor solutions to meet each project's unique needs, ensuring optimal results and client satisfaction.</p>
           </div>
+        </div>
+
+      </section>
+      {/* contact section */}
+      <section className='flex flex-col lg:flex-row px-5 lg:px-10 my-5 lg:h-[80vh] items-center gap-5'>
+        <div className='lg:w-1/2 '>
+          <img className='lg:h-[80vh] rounded-md' src={cntc} alt="image" />
+        </div>
+        <div className='lg:w-1/2 lg:h-[80vh] p-6 rounded-md shadow-sm shadow-gray-400 '>
+
+          
+            <h3 className="text-sm font-semibold text-gray-700 uppercase">
+              To Become a Client
+            </h3>
+            <h2 className="text-2xl font-bold text-blue-600 mt-1 mb-2">
+              Ready to Get Started?
+            </h2>
+            <p className="text-gray-600 text-sm mb-6">
+              Please, fill the form to get a response. After processing the data, a
+              personal manager will contact you.
+            </p>
+
+            {/* Form */}
+            <form className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  placeholder="Your Name *"
+                  className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email *"
+                  className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  placeholder="Your Phone *"
+                  className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject *"
+                  className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <textarea
+                placeholder="Message..."
+                className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                rows="4"
+              />
+              <div>
+                <label className="block text-sm font-medium text-gray-600 mb-1">
+                  What is 5 + 10?
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter chapcha"
+                  className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-blue-600 cursor-pointer text-white rounded-full py-3 font-semibold text-sm hover:bg-blue-700 transition"
+              >
+                SUBMIT NOW
+              </button>
+            </form>
+          
+
         </div>
 
       </section>
