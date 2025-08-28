@@ -26,6 +26,17 @@ import star from '../assets/icons/starIcon.webp'
 import hand from '../assets/icons/handIcon.webp'
 import msg from '../assets/icons/msgicon.webp'
 import brain from '../assets/icons/brainicon.webp'
+import { Link } from 'react-router-dom'
+{/*certificates images*/ }
+import cert1 from '../assets/certificates/1.jpg'
+import cert2 from '../assets/certificates/2.jpg'
+import cert3 from '../assets/certificates/3.jpg'
+import cert4 from '../assets/certificates/4.jpg'
+import cert5 from '../assets/certificates/5.jpg'
+import cert6 from '../assets/certificates/6.jpg'
+import cert7 from '../assets/certificates/7.jpg'
+import cert8 from '../assets/certificates/8.jpg'
+
 
 const Home = () => {
   return (
@@ -38,8 +49,8 @@ const Home = () => {
           <div className='font-bold text-white text-xl  text-center lg:text-3xl'>Exploring the Depths,Building the Future</div>
           <span className='text-white text-lg w-[100vw] lg:w-[700px] text-center font-medium'>At Alphamgcc, we are a trusted name in diving and marine construction,delivering excellence with safety and precision</span>
           <div className='flex gap-5 mt-10 lg:mt-5'>
-            <button className='bg-red-600 px-3 py-2 cursor-pointer rounded-md text-white font-semibold'>Service</button>
-            <button className='bg-red-600 px-3 py-2 cursor-pointer rounded-md text-white font-semibold'>About us</button>
+            <a href='#ser' className='bg-red-600 px-3 py-2 cursor-pointer rounded-md text-white font-semibold'>Service</a>
+            <Link to={'/about'} className='bg-red-600 px-3 py-2 cursor-pointer rounded-md text-white font-semibold'>About us</Link>
           </div>
         </div>
 
@@ -53,7 +64,9 @@ const Home = () => {
           <p className='pb-7'>We serve numerous major companies across the Middle East, and our multiple joint operations agreements have enhanced our strength and knowledge. This collaborative approach fosters a spirit of cooperation and experience sharing</p>
           <p className=''>We are committed to excellence and quality, promoting successful, flawless work through our integrated partnerships with various companies in both the public and private sectors. Our focus is on long-term planning, mutual prosperity, and respect for the common good.</p>
           <p className='pb-3'>On behalf of our Board of Directors, we pledge to provide impeccable quality and excellent services, and we are always here to support you.</p>
+          <Link to={'/about'}>
           <button className='bg-primary py-4 text-white  font-medium text-lg cursor-pointer hover:animate-pulse px-10 rounded-md'>Read more</button>
+          </Link>
         </div>
         <div className='lg:w-1/2 w-full '>
           <img className='p-2' src={uperIMG} alt="Marine IMG" />
@@ -79,7 +92,9 @@ const Home = () => {
             <div className='px-5'>
               <h3 className='font-bold text-xl py-1 text-white'>Ship Husbandry</h3>
               <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
+              <Link to={'/marine_Craft'}>
               <button className='flex items-center gap-2 px-3 py-1 lg:my-2 hover:scale-105 cursor-pointer transition-all my-4  rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
+              </Link>
             </div>
           </div>
           <div className='bg-[#00c2ff] cursor-pointer hover:bg-blue-500 transition-all  lg:h-[400px] rounded-md w-[340px] lg:w-[280px]'>
@@ -89,7 +104,9 @@ const Home = () => {
             <div className='px-5'>
               <h3 className='font-bold text-xl py-1 text-white'>Conventional and Advanced NDT Services</h3>
               <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
+              <Link to={'/conventional_Services'}>
               <button className='flex items-center gap-2 px-3 py-1 my-2 hover:scale-105 cursor-pointer transition-all rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
+              </Link>
             </div>
           </div>
           <div className='bg-[#00c2ff] lg:h-[400px] cursor-pointer hover:bg-blue-500 transition-all  rounded-md w-[340px] lg:w-[280px]'>
@@ -99,7 +116,9 @@ const Home = () => {
             <div className='px-5'>
               <h3 className='font-bold text-xl py-1 text-white'>Subsea and Marine</h3>
               <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
+              <Link to={'/marine_Fenders'}>
               <button className='flex items-center gap-2 px-3 py-1 my-2 hover:scale-105 cursor-pointer transition-all rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
+              </Link>
             </div>
           </div>
           <div className='bg-[#00c2ff] lg:h-[400px] cursor-pointer hover:bg-blue-500 transition-all  rounded-md w-[340px] lg:w-[280px]'>
@@ -109,7 +128,9 @@ const Home = () => {
             <div className='px-5'>
               <h3 className='font-bold text-xl py-1 text-white'>Rope Access and Drone Service</h3>
               <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
+              <Link to={'/rope_Access'}>
               <button className='flex items-center gap-2 px-3 py-1 my-2 hover:scale-105 cursor-pointer transition-all rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
+              </Link>
             </div>
           </div>
 
@@ -157,6 +178,40 @@ const Home = () => {
           <div className='w-[150px] lg:w-[250px] flex justify-center items-center bg-white p-2 shadow-lg rounded-md'>
             <img src={client8} alt="client image" />
           </div>
+        </div>
+      </section>
+      {/* certification section */}
+      <section className='bg-slate-200 p-3 lg:py-10 lg:px-6'>
+        <h2 className='font-bold text-2xl  text-center lg:text-4xl'>Our Certifications</h2>
+        <div className='py-10 lg:grid flex flex-col items-center gap-5   lg:grid-cols-4 '>
+          <div className='lg:h-[500px] w-[300px]'>
+           <img className='object-scale-down h-full w-full ' src={cert1} alt="certificate image" />
+          </div>
+          <div className='lg:h-[500px] w-[300px]'>
+           <img className='object-scale-down h-full w-full ' src={cert2} alt="certificate image" />
+          </div>
+          <div className='lg:h-[500px] w-[300px]'>
+           <img className='object-scale-down h-full w-full ' src={cert5} alt="certificate image" />
+          </div>
+          <div className='lg:h-[500px] w-[300px]'>
+           <img className='object-scale-down h-full w-full ' src={cert8} alt="certificate image" />
+          </div>
+          
+          <div className=''>
+           <img className='object-scale-down h-full w-full ' src={cert4} alt="certificate image" />
+          </div>
+          
+          <div className=''>
+           <img className='object-scale-down h-full w-full ' src={cert3} alt="certificate image" />
+          </div>
+          <div className=''>
+           <img className='object-scale-down h-full w-full ' src={cert6} alt="certificate image" />
+          </div>
+          <div className=''>
+           <img className='object-scale-down h-full w-full ' src={cert7} alt="certificate image" />
+          </div>
+          
+
         </div>
       </section>
       {/* why us section */}

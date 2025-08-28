@@ -64,9 +64,9 @@ const Sidebar = ({ open, onClose }) => {
 
         {/* Quote Button */}
         <div className="px-4 mt-6">
-          <button className="w-full border border-white rounded-full px-4 py-2 hover:bg-white hover:text-black transition">
+          <Link onClick={onClose} to={'/contact'} className="w-full border border-white rounded-full px-4 py-2 hover:bg-white hover:text-black transition">
             Get A Quote
-          </button>
+          </Link>
         </div>
       </div>
 

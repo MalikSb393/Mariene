@@ -14,7 +14,7 @@ const Header = () => {
             <div className='bg-[#00c2ff] hidden lg:flex justify-between items-center px-20 h-12'>
                 <div className='flex items-center gap-9'>
                     <span className='flex  text-white font-semibold items-center gap-2'><IoIosMailUnread className='text-xl font-bold' />operation@alphamgcc.com</span>
-                    <span className='flex text-white font-semibold items-center gap-2'><FaLocationDot className='text-xl font-bold' />Manama, Bahrain</span>
+                    <span className='flex text-white font-semibold items-center gap-2'><FaLocationDot className='text-xl font-bold' />Al Munirah, Jeddah</span>
                 </div>
                 <div className='flex items-center gap-3'>
                     <div className='flex items-center justify-center bg-white rounded-full text-xl text-[#f98d06] p-2'>
@@ -85,7 +85,7 @@ const Header = () => {
                         </li>
                     </ul>
                     <div className='text-white'>
-                        <a href='#CU' className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</a>
+                        <Link to={'/contact'} className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</Link>
                     </div>
                 </div>
                 <button className='lg:hidden text-4xl text-white' onClick={() => setSidebarOpen(true)}> <GiHamburgerMenu className='text-4xl lg:hidden text-white'/> </button>
