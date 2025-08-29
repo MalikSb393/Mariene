@@ -99,7 +99,7 @@ const ServiceSection = ({heading}) => {
                 <div className='h-1/2'>
                 <img className='rounded-t-md' src={img8} alt="service  image" />
                 </div>
-                <div className='h-1/2 px-8 py-6 rounded-b-md bg-white'>
+                <div className='h-1/2 px-8 py-2 lg:py-6 rounded-b-md bg-white'>
                  <div className='font-medium text-xl'>Rope Access & Drone Services</div>
                  <Link to={'/rope_Access'}>
                 <button className='bg-[#00c2ff] hover:bg-amber-600 transition-all w-full py-2 flex items-center gap-2 justify-center cursor-pointer  rounded-full mt-9 text-white font-medium'>Explore More <div><FaArrowRight/></div> </button>

@@ -83,11 +83,6 @@ const Footer = () => {
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact: <div>+97300000000</div></li>
                     </ul>
                 </div>
-
-             <div className='absolute right-0 bottom-0 text-white font-medium text-xs'>
-                <div>Developed by : Rajab</div>
-                <div>rajabali10005@gmail.com</div>
-            </div>
             </div>
             <hr className='h-[1px] bg-blue-500 border-none'/>
             <div className='bg-[#06071d] text-white text-center py-4 font-medium'>
