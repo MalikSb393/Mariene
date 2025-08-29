@@ -15,9 +15,9 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div className='bg-[#06071d] relative flex flex-col items-center lg:flex-row gap-10 py-6 px-5 lg:px-20'>
+            <div className='bg-[#06071d] relative flex flex-col items-center lg:flex-row gap-2 lg:gap-10 py-2 px-5 lg:px-20'>
                 <div className='lg:h-[70dvh] w-[290px] '>
-                    <div className='px-3  w-[50%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
+                    <div className='lg:px-3  w-[20%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
                     <p className='font-medium text-white'>Our Team is made of a group of highly trained, experienced certified divers and are all WCB/CSA certified. We are experienced in the many challenges involved with inspection and maintenance diving.</p>
                     <Link to={'/about'}>
                     <button className='py-1 px-3 bg-primary font-semibold rounded-sm cursor-pointer text-white my-5'>About us</button>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
                 <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='font-bold text-white text-3xl '>Quick Links <div className='w-[12%] mt-1 h-1 bg-primary'></div></div>
-                    <ul className='text-white font-medium  mt-5 flex flex-col gap-3'>
+                    <ul className='text-white font-medium mt-1 lg:mt-5 flex flex-col gap-0.5 lg:gap-3'>
                         <Link to={'/'}>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Home</li>
                         </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
                 <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='font-bold text-white text-3xl '>Our Services <div className='w-[12%] mt-1 h-1 bg-primary'></div></div>
-                    <ul className='text-white font-medium  mt-5 flex flex-col gap-3'>
+                    <ul className='text-white font-medium  mt-1 lg:mt-5 flex flex-col gap-0.5 lg:gap-3'>
                         <Link to={'/conventional_Services'}>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Conventional & Advanced NDT Services</li>
                         </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
                 </div>
                 <div className='lg:h-[70dvh] w-[290px] '>
                     <div className='font-bold text-white text-3xl '>Our Services <div className='w-[12%] mt-1 h-1 bg-primary'></div></div>
-                    <ul className='text-white font-medium  mt-5 flex flex-col gap-3'>
+                    <ul className='text-white font-medium  mt-1 lg:mt-5 flex flex-col gap-0.5 lg:gap-3'>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Head Office: <div>Al Munirah, Jeddah</div></li>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Email: <div>operation@alphamgcc.com</div></li>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact: <div>+97333333333</div></li>
