@@ -28,7 +28,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <nav className='bg-black flex items-center justify-between px-2 lg:px-20 h-20'>
+            <nav className='bg-black flex items-center justify-between px-2 lg:px-20 h-16 lg:h-20'>
                 <div className=''>
                     <img className='lg:h-14 h-12 rounded-full ' src={logo} alt="Logo" />
                 </div>
