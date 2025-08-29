@@ -15,9 +15,9 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div className='bg-[#06071d] relative flex flex-col items-center lg:flex-row gap-2 lg:gap-10 py-2 px-5 lg:px-20'>
+            <div className='bg-[#06071d] relative flex flex-col items-center lg:flex-row gap-2 lg:gap-10 py-2 lg:py-6 px-5 lg:px-20'>
                 <div className='lg:h-[70dvh] w-[290px] '>
-                    <div className='lg:px-3  w-[20%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
+                    <div className='lg:px-3  w-[20%] lg:w-[40%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
                     <p className='font-medium text-white'>Our Team is made of a group of highly trained, experienced certified divers and are all WCB/CSA certified. We are experienced in the many challenges involved with inspection and maintenance diving.</p>
                     <Link to={'/about'}>
                     <button className='py-1 px-3 bg-primary font-semibold rounded-sm cursor-pointer text-white my-5'>About us</button>
