@@ -8,10 +8,10 @@ import { FaArrowRight } from "react-icons/fa";
 import ServiceSection from '../components/ServiceSection'
 import cntc from '../assets/contact.jpg'
 {/*expertise images*/ }
-import exp1 from '../assets/Expertise_img/exp1.webp'
-import exp2 from '../assets/Expertise_img/exp2.webp'
-import exp3 from '../assets/Expertise_img/exp3.webp'
-import exp4 from '../assets/Expertise_img/exp4.webp'
+import img15 from '../assets/pics/15.jpg'
+import img20 from '../assets/pics/20.jpg'
+import img21 from '../assets/pics/21.jpg'
+import pic2  from '../assets/pic2.jpg'
 {/*clients images*/ }
 import client1 from '../assets/Clients-Img/cli1.png'
 import client2 from '../assets/Clients-Img/cli2.jpg'
@@ -118,56 +118,59 @@ const Home = () => {
 
         </div>
       </section>
-      {/* Service Section */}
-      <ServiceSection heading={'Specialist Logistics Services'} />
       {/* expertise section */}
-      <section className='bg-[#002e4d] p-4 lg:p-10'>
-        <div className='font-semibold text-3xl py-4 lg:py-0 text-center secondary '>Our Expertise</div>
+      <section className='bg-slate-300 p-4 lg:p-10'>
+        <div className='font-bold text-3xl lg:text-5xl py-4 lg:py-0 text-center secondary '>Our Expertise</div>
         <div className='lg:p-10 p-4 flex items-center flex-col gap-4 lg:gap-0  lg:grid lg:grid-cols-4'>
           <div className='bg-[#00c2ff] lg:h-[400px] cursor-pointer hover:bg-blue-500 transition-all rounded-md w-[340px] lg:w-[280px]'>
             <div className='h-[200px] w-full py-6 px-2'>
-              <img className='h-full w-full rounded-md' src={exp1} alt="expertise image" />
+              <img className='h-full w-full rounded-md' src={pic2} alt="expertise image" />
             </div>
             <div className='px-5'>
-              <h3 className='font-bold text-xl py-1 text-white'>Ship Husbandry</h3>
-              <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
-              <Link to={'/marine_Craft'}>
+              <h3 className='font-bold text-xl py-1 text-white'>Welding 3G, 6G, Breezing and Argon</h3>
+              <p className='text-white font-medium'>Steel Welding, iron rods, Pipes, structure, Copper,
+                Complete welding...</p>
+              <Link to={'/expertise'}>
                 <button className='flex items-center gap-2 px-3 py-1 lg:my-2 hover:scale-105 cursor-pointer transition-all my-4  rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
               </Link>
             </div>
           </div>
           <div className='bg-[#00c2ff] cursor-pointer hover:bg-blue-500 transition-all  lg:h-[400px] rounded-md w-[340px] lg:w-[280px]'>
             <div className='h-[200px] rounded-md py-6 px-2'>
-              <img className='h-full w-full rounded-md' src={exp2} alt="expertise image" />
+              <img className='h-full w-full rounded-md' src={img21} alt="expertise image" />
             </div>
             <div className='px-5'>
-              <h3 className='font-bold text-xl py-1 text-white'>Conventional and Advanced NDT Services</h3>
-              <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
-              <Link to={'/conventional_Services'}>
+              <h3 className='font-bold text-xl py-1 text-white'>Fabrication and Eraction Works</h3>
+              <p className='text-white font-medium'>Structure fabrication Modification, Steel, Stain Less Steel and.
+                Piping...</p>
+              <Link to={'/expertise'}>
                 <button className='flex items-center gap-2 px-3 py-1 my-2 hover:scale-105 cursor-pointer transition-all rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
               </Link>
             </div>
           </div>
           <div className='bg-[#00c2ff] lg:h-[400px] cursor-pointer hover:bg-blue-500 transition-all  rounded-md w-[340px] lg:w-[280px]'>
             <div className='h-[200px] py-6 px-2'>
-              <img className='h-full w-full rounded-md' src={exp3} alt="expertise image" />
+              <img className='h-full w-full rounded-md' src={img20} alt="expertise image" />
             </div>
             <div className='px-5'>
-              <h3 className='font-bold text-xl py-1 text-white'>Subsea and Marine</h3>
-              <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
-              <Link to={'/marine_Fenders'}>
+              <h3 className='font-bold text-xl py-1 text-white'>FABRICATION & InstallatiOn Of HVAC</h3>
+              <p className='text-white font-medium'>Condensers, Evaporator & Heat Exchangers. All Brands any
+                capacity...</p>
+              <Link to={'/expertise'}>
                 <button className='flex items-center gap-2 px-3 py-1 my-2 hover:scale-105 cursor-pointer transition-all rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
               </Link>
             </div>
           </div>
           <div className='bg-[#00c2ff] lg:h-[400px] cursor-pointer hover:bg-blue-500 transition-all  rounded-md w-[340px] lg:w-[280px]'>
             <div className='h-[200px] py-6 px-2'>
-              <img className='h-full w-full rounded-md' src={exp4} alt="expertise image" />
+              <img className='h-full w-full rounded-md' src={img15} alt="expertise image" />
             </div>
             <div className='px-5'>
-              <h3 className='font-bold text-xl py-1 text-white'>Rope Access and Drone Service</h3>
-              <p className='text-white font-medium'>Structural Inspections and Assessments: The team of certifie...</p>
-              <Link to={'/rope_Access'}>
+              <h3 className='font-bold text-xl py-1 text-white'>Mechanical Engineering</h3>
+              <p className='text-white font-medium'>Calibrating, Fabrication, Machining, Turning, Balancing of
+                Various Kinds of Shaft, Impellors, Blowers, Cranks, Seals.
+                And all....</p>
+              <Link to={'/expertise'}>
                 <button className='flex items-center gap-2 px-3 py-1 my-2 hover:scale-105 cursor-pointer transition-all rounded-full bg-white text-lg font-medium'>Read More <FaArrowRight /></button>
               </Link>
             </div>
@@ -175,6 +178,9 @@ const Home = () => {
 
         </div>
       </section>
+      {/* Service Section */}
+      <ServiceSection heading={'Specialist Logistics Services'} />
+
       {/* Experience section */}
       <section className='bg-white p-5 lg:p-10'>
         <div className='bg-primary p-2 lg:p-15 rounded-tl-[50px]  lg:rounded-tl-[100px] rounded-br-[50px] lg:rounded-br-[100px] lg:mx-10'>

@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from "react";
 import { FiX, FiChevronDown } from "react-icons/fi";
 import logo from '../assets/logo.jpeg'
+import logo1 from '../assets/logo11.png'
+
 import { Link } from 'react-router-dom';
 const Sidebar = ({ open, onClose }) => {
     const [servicesOpen, setServicesOpen] = useState(false);
@@ -16,7 +18,7 @@ const Sidebar = ({ open, onClose }) => {
       >
         {/* Header */}
         <div className="flex justify-between items-center px-4 py-1 border-b border-gray-700">
-          <img className='rounded-full h-10' src={logo} alt="logo" />
+          <img className=' h-10' src={logo1} alt="logo" />
           <button className="text-3xl" onClick={onClose}>
             <FiX />
           </button>
@@ -26,6 +28,8 @@ const Sidebar = ({ open, onClose }) => {
         <ul className="flex flex-col p-4 space-y-4">
           <Link   onClick={onClose}  to={'/'} className="hover:text-blue-400 cursor-pointer">Home</Link>
           <Link  onClick={onClose} to={'/about'} className="hover:text-blue-400 cursor-pointer">About us</Link>
+          <Link  onClick={onClose} to={'/expertise'} className="hover:text-blue-400 cursor-pointer">Our Expertise</Link>
+
 
           {/* Dropdown inside Sidebar */}
           <li>
@@ -33,7 +37,7 @@ const Sidebar = ({ open, onClose }) => {
               className="flex justify-between items-center w-full hover:text-blue-400"
               onClick={() => setServicesOpen(!servicesOpen)}
             >
-              Our Services+Our Expertise
+              Our Services + services modes
               <div>
               <FiChevronDown
                 className={`transform transition-transform ${

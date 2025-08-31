@@ -14,6 +14,7 @@ import Survey_Services from "../pages/Survey_Services";
 import Hse from "../pages/Hse";
 import Contact from "../pages/Contact";
 import Clients from "../pages/Clients";
+import Expertise from "../pages/Expertise.jsx";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
             {
                 path: "/clients",
                 element: <Clients/>
+            },
+            {
+                path: "/expertise",
+                element: <Expertise/>
             },
 
             

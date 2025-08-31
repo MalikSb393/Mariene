@@ -12,7 +12,7 @@ const Rope_Access = () => {
       <div className='lg:px-20 px-3 bg-slate-50 py-10'>
 
                 <h1 className='lg:text-4xl text-2xl text-center font-bold primary'>Rope Access & Drone Services</h1>
-                <p className='text-center text-slate-600 py-4 '>Alphamgcc is offering Rope Access services with its IRATA (Industrial Rope Access Trade Association) technicians, which can perform a variety of mechanical crafts including pipefitting, insulation, and welding, as well as inspections and NDT Inspections—with the most advanced NDT equipmen</p>
+                <p className='text-center text-slate-600 py-4 '>Alpha Group is offering Rope Access services with its IRATA (Industrial Rope Access Trade Association) technicians, which can perform a variety of mechanical crafts including pipefitting, insulation, and welding, as well as inspections and NDT Inspections—with the most advanced NDT equipmen</p>
                 <div className='text-center mt-6 text-2xl font-bold'>MECHANICAL ROPE ACCESS CAPABILITIES</div>
                 <p className='text-center text-slate-600'>Welding, Fitting, Structural Steel</p>
                 <p className='text-center text-slate-600'>Structural Installations, Removal, and Repair</p>

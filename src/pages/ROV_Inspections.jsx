@@ -12,8 +12,8 @@ const ROV_Inspections = () => {
        <div className='lg:px-20 px-3 bg-slate-50 py-10'>
 
                 <h1 className='lg:text-4xl text-2xl text-center font-bold primary'>ROV Inspections</h1>
-                <p className='text-center text-slate-600 py-4 '>Alphamgcc is providing underwater inspection services by using Remotely Operated Vehicles (ROV).</p>
-                <p className='text-center text-slate-600'>Moreover, Alphamgcc is fully capable to conduct the UWILDs with ROV for cost & time effective solutions to Client’s.</p>
+                <p className='text-center text-slate-600 py-4 '>Alpha Group is providing underwater inspection services by using Remotely Operated Vehicles (ROV).</p>
+                <p className='text-center text-slate-600'>Moreover, Alpha Group is fully capable to conduct the UWILDs with ROV for cost & time effective solutions to Client’s.</p>
 
 
             </div>

@@ -11,8 +11,8 @@ const Marine_Fenders = () => {
             <div className='lg:px-20 px-3 bg-slate-50 py-10'>
 
                 <h1 className='lg:text-4xl text-2xl text-center font-bold primary'>Marine Fenders</h1>
-                <p className='text-center text-slate-600 py-4 '>Alphamgcc  sister Company is having its fenders manufacturing facilities in Dammam, Saudi Arabia and below is brief information primarily intended for users with some experience of fender selection.</p>
-                <p className='text-center text-slate-600'>Alphamgcc is always happy to assist with all aspects of fender design, please contact us for further information.</p>
+                <p className='text-center text-slate-600 py-4 '>Alpha Group  sister Company is having its fenders manufacturing facilities in Dammam, Saudi Arabia and below is brief information primarily intended for users with some experience of fender selection.</p>
+                <p className='text-center text-slate-600'>Alpha Group is always happy to assist with all aspects of fender design, please contact us for further information.</p>
                 <p className='text-center text-slate-600'>In addition to fenders manufacturing, Alphamgcc has the full-scale capabilities and practical experience for fenders installation and old fenders removal including recovery from Seabed.</p>
 
 

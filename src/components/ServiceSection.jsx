@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 const ServiceSection = ({heading}) => {
   return (
-    <div id='ser' className='bg-[#000684] lg:p-10'>
+    <div id='ser' className='bg-slate-400 lg:p-10'>
         <div className='secondary font-medium pt-3 lg:pt-0 text-xl lg:text-2xl text-center'>We specialise in the transportation</div>
         <div className='text-center font-bold text-white py-2 text-3xl lg:text-5xl'>{heading}</div>
         <div className='lg:p-10 p-4 flex flex-col items-center lg:grid lg:grid-cols-3 gap-7'>

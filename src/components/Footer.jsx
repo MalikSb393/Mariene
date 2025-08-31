@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.jpeg'
+import logo1 from '../assets/logo11.png'
+
 import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
@@ -18,7 +20,7 @@ const Footer = () => {
             <div className='bg-[#06071d] relative flex flex-col items-center lg:flex-row gap-2 lg:gap-10 py-2 lg:py-6 px-5 lg:px-20'>
                 <div className='lg:h-[70dvh] w-[290px] '>
                     <Link to={'/'}>
-                    <div className='lg:px-3  w-[20%]  lg:w-[40%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
+                    <div className='lg:px-3  w-[20%]  lg:w-[40%] lg:mb-5'><img className='' src={logo1} alt="logo" /></div>
                     </Link>
                     <p className='font-medium text-white'>Our Team is made of a group of highly trained, experienced certified divers and are all WCB/CSA certified. We are experienced in the many challenges involved with inspection and maintenance diving.</p>
                     <Link to={'/about'}>

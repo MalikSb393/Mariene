@@ -19,7 +19,7 @@ const Industrial_Services = () => {
             <div className='lg:px-20 px-3 bg-slate-50 py-10'>
 
                 <h1 className='lg:text-4xl text-2xl text-center font-bold primary'>Industrial Services</h1>
-                <p className='text-center text-slate-600 py-4 '>Alphamgcc is providing Industrial services for over 30 years of experience using its experienced workforce & advanced equipment. Our teams of experienced personnel committed deliver solutions to the Oil, Gas and Petrochemical Industries as mentioned below;</p>
+                <p className='text-center text-slate-600 py-4 '>Alpha Group is providing Industrial services for over 10 years of experience using its experienced workforce & advanced equipment. Our teams of experienced personnel committed deliver solutions to the Oil, Gas and Petrochemical Industries as mentioned below;</p>
                 <p className='text-center text-slate-600'>Above ground storage tanks rehabilitation</p>
                 <p className='text-center text-slate-600'>Tanks Cleaning and Maintenance</p>
                 <p className='text-center text-slate-600'>Fabrication & Welding</p>

@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '../assets/logo.jpeg'
+import logo1 from '../assets/logo11.png'
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 const Header = () => {
@@ -46,16 +47,18 @@ const Header = () => {
           ${hideHeader ? "fixed top-0 w-full" : "relative"} flex items-center justify-between px-2 lg:px-20 h-16 lg:h-20`}>
                <Link to={'/'}>
                 <div className=''>
-                    <img className='lg:h-14 h-12 rounded-full ' src={logo} alt="Logo" />
+                    <img className='lg:h-14 h-12  ' src={logo1} alt="Logo" />
                 </div>
                </Link>
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white  flex font-medium text-md items-center gap-5'>
                         <Link to={'/'} className='hover:text-amber-500 transition-all cursor-pointer'>Home</Link>
                         <Link to='/about' className='hover:text-amber-500 transition-all cursor-pointer'>About us</Link>
+                        <Link to={'/expertise'} className='hover:text-amber-500 transition-all cursor-pointer'>Our Expertise</Link>
+
                         <li className="relative hover:text-amber-500 transition-all group cursor-pointer">
                             <span className="">
-                                Our Services<span className='text-amber-500'>+</span>Our Expertise
+                                Our Services<span className='text-amber-500'>+</span>services modes
                             </span>
 
                             {/* Dropdown */}
