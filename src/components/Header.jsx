@@ -38,15 +38,17 @@ const Header = () => {
                         <div className='text-white font-semibold '>
                             Get In Touch
                         </div>
-                        <div className='text-white font-bold'>+97333333333</div>
+                        <div className='text-white font-bold'>+966 503619504</div>
                     </div>
                 </div>
             </div>
-            <nav className={`bg-black z-50 fixed w-full top-0   transition-all duration-300 
-          lg:${hideHeader ? "fixed top-0 w-full" : "relative"} flex items-center justify-between px-2 lg:px-20 h-16 lg:h-20`}>
+            <nav className={`bg-black z-50  w-full    transition-all duration-300 
+          ${hideHeader ? "fixed top-0 w-full" : "relative"} flex items-center justify-between px-2 lg:px-20 h-16 lg:h-20`}>
+               <Link to={'/'}>
                 <div className=''>
                     <img className='lg:h-14 h-12 rounded-full ' src={logo} alt="Logo" />
                 </div>
+               </Link>
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white  flex font-medium text-md items-center gap-5'>
                         <Link to={'/'} className='hover:text-amber-500 transition-all cursor-pointer'>Home</Link>

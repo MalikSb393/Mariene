@@ -18,7 +18,7 @@ const Footer = () => {
             <div className='bg-[#06071d] relative flex flex-col items-center lg:flex-row gap-2 lg:gap-10 py-2 lg:py-6 px-5 lg:px-20'>
                 <div className='lg:h-[70dvh] w-[290px] '>
                     <Link to={'/'}>
-                    <div className='lg:px-3  w-[30%] lg:w-[40%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
+                    <div className='lg:px-3  w-[20%]  lg:w-[40%] lg:mb-5'><img className='rounded-full' src={logo} alt="logo" /></div>
                     </Link>
                     <p className='font-medium text-white'>Our Team is made of a group of highly trained, experienced certified divers and are all WCB/CSA certified. We are experienced in the many challenges involved with inspection and maintenance diving.</p>
                     <Link to={'/about'}>
@@ -80,9 +80,9 @@ const Footer = () => {
                     <ul className='text-white font-medium  mt-1 lg:mt-5 flex flex-col gap-0.5 lg:gap-3'>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Head Office: <div>Al Munirah, Jeddah</div></li>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Email: <div>operation@alphamgcc.com</div></li>
-                        <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact: <div>+97333333333</div></li>
+                        <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact: <div>+966 503619504</div></li>
                         <li className='cursor-pointer hover:text-amber-500 transition-all'>Branch: <div>Jeddah, Kingdom of Saudi Arabia</div></li>
-                        <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact: <div>+97300000000</div></li>
+                        <li className='cursor-pointer hover:text-amber-500 transition-all'>Contact: <div>+966 503619504</div></li>
                     </ul>
                 </div>
             </div>
