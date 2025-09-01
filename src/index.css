@@ -11,3 +11,18 @@
 html {
     scroll-behavior: smooth;
 }
+#google_translate_element {
+  display: none !important;
+}
+
+.goog-logo-link, .goog-te-gadget {
+  display: none !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}

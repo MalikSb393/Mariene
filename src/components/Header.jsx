@@ -7,7 +7,10 @@ import logo from '../assets/logo.jpeg'
 import logo1 from '../assets/logo11.png'
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import LanguageSwitcher from './LanguageSwitcher';
+
 const Header = () => {
+   
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [hideHeader, setHideHeader] = useState(false);
 
@@ -45,11 +48,11 @@ const Header = () => {
             </div>
             <nav className={`bg-black z-50  w-full    transition-all duration-300 
           ${hideHeader ? "fixed top-0 w-full" : "relative"} flex items-center justify-between px-2 lg:px-20 h-16 lg:h-20`}>
-               <Link to={'/'}>
-                <div className=''>
-                    <img className='lg:h-14 h-12  ' src={logo1} alt="Logo" />
-                </div>
-               </Link>
+                <Link to={'/'}>
+                    <div className=''>
+                        <img className='lg:h-14 h-12  ' src={logo1} alt="Logo" />
+                    </div>
+                </Link>
                 <div className='lg:flex hidden items-center gap-20'>
                     <ul className='text-white  flex font-medium text-md items-center gap-5'>
                         <Link to={'/'} className='hover:text-amber-500 transition-all cursor-pointer'>Home</Link>
@@ -108,7 +111,11 @@ const Header = () => {
                         <Link to={'/contact'} className='px-4 py-2 cursor-pointer hover:bg-[#f98d06] text-medium font-medium transition-all border-white rounded-full border-2 '>Get A Quote</Link>
                     </div>
                 </div>
+                <Link to={'/'}>
+                <div className='text-amber-500 text-xl font-bold lg:hidden'>Alpha Group</div>
+                </Link>
                 <button className='lg:hidden text-4xl text-white' onClick={() => setSidebarOpen(true)}> <GiHamburgerMenu className='text-4xl lg:hidden text-white' /> </button>
+                
                 <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
             </nav>
         </header>
